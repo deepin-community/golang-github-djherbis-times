@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
+# Do not install the example binary
+export DH_GOLANG_EXCLUDES := example
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang

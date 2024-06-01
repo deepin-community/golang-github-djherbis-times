@@ -1,5 +1,40 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-djherbis-times (1.5.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+    Fixes: lintian: package-uses-old-debhelper-compat-version
+    See-also: https://lintian.debian.org/tags/package-uses-old-debhelper-compat-version.html
+  * Set debhelper-compat version in Build-Depends.
+    Fixes: lintian: uses-debhelper-compat-file
+    See-also: https://lintian.debian.org/tags/uses-debhelper-compat-file.html
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+    Fixes: lintian: upstream-metadata-file-is-missing
+    See-also: https://lintian.debian.org/tags/upstream-metadata-file-is-missing.html
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 1.5.0
+  * Use debhelper v13
+  * Fix typo in package description
+  * Add DEP-14 layout to gbp.conf
+  * Update d/watch to version 4
+  * Add Multi-Arch: foreign
+  * Add Rules-Requires-Root: no
+  * Exclude example binary from the package build
+  * Update gitlab-ci.yml
+  * Update Maintainer team address
+  * Update Section: to golang
+  * Update to Standards-Version to 4.6.0, no changes needed
+  * Add Built-Using field to d/control
+  * Update d/copyright
+  * Use a build directory and fix typo in DH_GOLANG_EXCLUDES
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 07 Sep 2021 21:09:57 +0200
+
+golang-github-djherbis-times (1.0.1+git20170215.d25002f-1) unstable; urgency=medium
+
+  * Initial release (Closes: #893779)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 22 Mar 2018 11:08:15 +0100
